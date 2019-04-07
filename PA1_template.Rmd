@@ -18,7 +18,8 @@ if(!(require("ggplot2"))) {
 
 ###Read in the data###  
 
-Read in the activity.csv dataset, speciying that it has a header, missing values
+Read in the activity.csv dataset, assuming it is present in the current working
+directory, specifying that it has a header, missing values
 are indicated by 'NA', and define the classes of the steps and date columns as
 numeric and Date. We don't define interval as a factor yet as doing so in 
 colClasses means we can't pass the argument 'ordered=T' which specifies its a 
